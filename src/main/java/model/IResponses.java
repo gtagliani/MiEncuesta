@@ -9,24 +9,18 @@ package model;
  */
 public  interface IResponses 
 {
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
-	 */
+	public IPolls getPoll() ;
+	
+	public IPages getPage() ;
+	
+	public IQuestions getquestion() ;
 	
 	public IFields getField() ;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
-	 */
 	
 	public Object getResponse() ;
-
+	
+	/*Usuario que respondio a la encuesta*/
+	public IUsers  getUser();
 
 }
 
