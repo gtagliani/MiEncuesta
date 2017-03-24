@@ -9,33 +9,19 @@ package model;
  */
 public  interface FieldType 
 {
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
-	 */
-	
+
 	public String getClassName() ;
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
-	 */
-	
 	public String getName() ;
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
-	 */
-	
+	//Just one of those will be true //
 	public Boolean isUsesList() ;
+	
+	public Boolean isInteger() ;
 
+	public Boolean isDecimal() ;
+	
+	//END JUST ONE //
 
 }
 
