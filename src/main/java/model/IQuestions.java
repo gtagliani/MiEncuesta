@@ -25,7 +25,7 @@ public  interface IQuestions
 	 * @ordered
 	 */
 	
-	public void getQuestion() ;
+	public String getQuestion() ;
 
 
 }
