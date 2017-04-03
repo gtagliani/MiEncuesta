@@ -5,22 +5,16 @@
 	<artifactId>model</artifactId>
 	<name>model</name>
 	<groupId>model</groupId>
-	<!--
-		* Start of user code for project
-	  -->
+	<!-- * Start of user code for project -->
 	<packaging>jar</packaging>
 	<version>1.0.0-BUILD-SNAPSHOT</version>
 	<properties>
 		<java-version>1.7</java-version>
 	</properties>
-	<!--
-		* End of user code for project
-	  -->
+	<!-- * End of user code for project -->
 	<build>
 		<plugins>
-			<!--
-				* Start of user code for plugins
-		  	-->
+			<!-- * Start of user code for plugins -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -33,23 +27,39 @@
 					<showDeprecation>true</showDeprecation>
 				</configuration>
 			</plugin>
-			<!--
-				* End of user code for plugins
-		  	-->		
-			</plugins>
-		<!--
-			* Start of user code for build
-		  -->
-		<!--
-			* End of user code for build
-		  -->
+			<!-- * End of user code for plugins -->
+		</plugins>
+		<!-- * Start of user code for build -->
+		<!-- * End of user code for build -->
 	</build>
 	<dependencies>
-		<!--
-			* Start of user code for dependencies
-		  -->
-		<!--
-			* End of user code for dependencies
-		  -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>5.2.9.Final</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.ejb</groupId>
+			<artifactId>ejb-api</artifactId>
+			<version>3.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>org.apache.commons.logging</artifactId>
+			<version>1.0.4</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.5</version>
+		</dependency>
+		<!-- * Start of user code for dependencies -->
+		<!-- * End of user code for dependencies -->
 	</dependencies>
+	<repositories>
+		<repository>
+			<id>ops4j</id>
+			<url>http://repository.ops4j.org/maven2/</url>
+		</repository>
+	</repositories>
 </project>
